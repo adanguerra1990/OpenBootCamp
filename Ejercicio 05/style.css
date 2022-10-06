@@ -20,8 +20,7 @@
 }
 
 .img-galeria {
-    width: 400px;
-    background: linear-gradient( rgba(0,0,0,0.45), rgba(0,0,0,0.45) );
+    width: 400px;    
 }
 
 .img-galeria:hover {
