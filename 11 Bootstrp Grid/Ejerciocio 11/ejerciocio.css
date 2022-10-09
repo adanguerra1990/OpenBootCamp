@@ -2,15 +2,8 @@
     margin: 0.25rem;
 }
 
-.col-sm {
+
+
+.col-sm-6 {
     background-color: rgb(18, 110, 190);
-}
-.col-md {
-    background-color: rgb(18, 190, 133);
-}
-.col-lg {
-    background-color: rgb(18, 190, 41);
-}
-.col-xl {
-    background-color: rgb(164, 190, 18);
 }
