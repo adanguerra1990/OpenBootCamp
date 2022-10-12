@@ -28,7 +28,46 @@
             like the one in previous versions of Bootstrap. Check out the
             examples below for how you can remix and restyle it to your liking.
           </p>
-          <button class="btn btn-primary btn-lg">Example button</button>
+          <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Example button</button>
+
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">
+                    Mi modal en ejecucion
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, delectus ducimus nisi laboriosam vel dolor!</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerra
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Guardar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -65,7 +104,9 @@
       </form>
     </div>
 
-    <div class="container container py-4 row-cols-md-3 row-cols-sm-1 d-md-flex justify-content-center gap-3">
+    <div
+      class="container container py-4 row-cols-md-3 row-cols-sm-1 d-md-flex justify-content-center gap-3"
+    >
       <div class="card mb-3">
         <div class="card-body">
           <h5 class="card-title">Adan Guerra</h5>
@@ -137,5 +178,12 @@
     const tooltipList = [...tooltipTriggerList].map(
       (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
     );
+
+    const myModal = document.getElementById("myModal");
+    const myInput = document.getElementById("myInput");
+
+    myModal.addEventListener("shown.bs.modal", () => {
+      myInput.focus();
+    });
   </script>
 </html>
