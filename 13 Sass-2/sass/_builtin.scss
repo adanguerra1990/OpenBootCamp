@@ -1,0 +1,14 @@
+@use "sass:string";
+
+@debug "hola";
+@debug string.index("Helvetica Neue", "Neue");
+
+$string : "Helvetica";
+$newString: string.insert($string, " Bold", 10);
+
+@debug $newString;
+@debug string.length($newString);
+@debug string.slice($newString, 5, 9);
+
+@debug string.to-upper-case("Roboto Mono");
+@debug string.to-lower-case("Roboto Mono");

@@ -1,0 +1,41 @@
+@use "mixins";
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  background-color: #616ccc;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+  @include mixins.formato-texto(rgb(199, 81, 81));
+}
+
+h2 {
+  @include mixins.formato-texto(#818181);
+}
+
+.listado {
+  width: 10rem;
+  background-color: #ccc;
+  padding: 0.5rem;
+
+  ul {
+    margin: 0 0.5rem;
+    font-size: 15px;
+
+    li {
+      list-style: none;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

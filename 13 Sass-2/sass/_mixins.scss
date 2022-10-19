@@ -1,0 +1,9 @@
+@mixin formato-texto($bg-color) {
+    color: $text-color;
+    text-transform: uppercase; 
+    width: 50rem;
+    background-color: $bg-color; 
+}
+
+$text-color: #37383f;
+$text-color-2: #192897;
